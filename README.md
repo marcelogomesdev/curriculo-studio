@@ -1,6 +1,5 @@
-````markdown
 <p align="center">
-  <img src="images/banner.png" alt="Currículo Studio" width="100%">
+  <img src="./images/banner.png" alt="Currículo Studio" width="100%">
 </p>
 
 <h1 align="center">📄 Currículo Studio</h1>
@@ -10,16 +9,16 @@
 </p>
 
 <p align="center">
-  Editor visual gratuito para criar currículos modernos, personalizados e prontos para PDF diretamente no navegador.
+  Editor visual gratuito para criar currículos profissionais, personalizados e prontos para PDF diretamente no navegador.
 </p>
 
 <p align="center">
   <a href="https://marcelogomesdev.github.io/curriculo-studio/">
-    <strong>🌐 Acessar o Site</strong>
+    🌐 <strong>Currículo Studio</strong>
   </a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://github.com/marcelogomesdev/curriculo-studio">
-    <strong>📂 Repositório</strong>
+    📂 <strong>Repositório</strong>
   </a>
 </p>
 
@@ -28,44 +27,19 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![MIT License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
 </p>
 
 ---
 
-# 📑 Índice
+# 📖 Sobre o Projeto
 
-- [🚀 Sobre o Projeto](#-sobre-o-projeto)
-- [✨ Principais Recursos](#-principais-recursos)
-- [🛠 Tecnologias](#-tecnologias)
-- [▶️ Como Executar](#️-como-executar)
-- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
-- [🧪 Testes](#-testes)
-- [🗺 Roadmap](#-roadmap)
-- [👨‍💻 Autor](#-autor)
-- [📜 Licença](#-licença)
+O **Currículo Studio** é um editor visual gratuito para criação de currículos profissionais diretamente no navegador.
 
----
+A proposta do projeto é oferecer uma experiência semelhante a ferramentas como **Canva** e **Notion**, permitindo editar o currículo diretamente na folha A4, vendo exatamente como ficará o resultado final antes da exportação em PDF.
 
-# 🚀 Sobre o Projeto
-
-O **Currículo Studio** é uma aplicação web desenvolvida para permitir que qualquer pessoa crie um currículo profissional de forma intuitiva, moderna e totalmente visual.
-
-Diferente dos editores tradicionais, toda a edição acontece diretamente na folha A4, permitindo visualizar em tempo real exatamente como o currículo será exportado em PDF.
-
-O projeto foi desenvolvido utilizando apenas **HTML, CSS e JavaScript puro**, sem frameworks ou backend, priorizando desempenho, simplicidade e total controle da interface.
-
-## 🎯 Diferenciais
-
-- ✅ Editor visual semelhante ao Canva e Notion
-- ✅ Totalmente gratuito
-- ✅ Funciona offline
-- ✅ Não exige cadastro
-- ✅ Sem backend
-- ✅ Dados armazenados localmente
-- ✅ Exportação para PDF
-- ✅ Interface moderna e responsiva
+Desenvolvido utilizando apenas **HTML, CSS e JavaScript**, o projeto funciona totalmente no navegador, sem necessidade de cadastro, backend ou instalação.
 
 ---
 
@@ -73,17 +47,17 @@ O projeto foi desenvolvido utilizando apenas **HTML, CSS e JavaScript puro**, se
 
 ## 🎨 Editor Visual
 
-- Edição diretamente na folha A4
-- Clique no texto para editar
-- Atualização instantânea
-- Pré-visualização em tempo real
+- Edição inline diretamente na folha A4
+- Atualização em tempo real
+- Clique para editar qualquer informação
+- Interface intuitiva
 - Organização por arrastar e soltar
 
 ---
 
-## 📄 Modelos Profissionais
+## 📄 Modelos de Currículo
 
-O sistema possui diversos modelos independentes:
+O sistema conta com diversos modelos exclusivos:
 
 - Original
 - Analista
@@ -95,7 +69,7 @@ Cada modelo possui identidade visual própria.
 
 ---
 
-## 🎨 Personalização Completa
+## 🎨 Personalização
 
 Personalize praticamente todo o currículo:
 
@@ -113,7 +87,7 @@ Personalize praticamente todo o currículo:
 
 ## 💼 Recursos Profissionais
 
-Suporte para:
+Crie currículos completos com:
 
 - Experiências
 - Formação Acadêmica
@@ -124,14 +98,15 @@ Suporte para:
 - Habilidades
 - Interesses
 - Referências
-- Prêmios
 - Voluntariado
 - Conquistas
 - Categorias personalizadas
 - Foto de perfil
-- Logotipos
+- Logos
 - Tecnologias
-- Links para LinkedIn, GitHub e WhatsApp
+- LinkedIn
+- GitHub
+- WhatsApp
 
 ---
 
@@ -139,7 +114,7 @@ Suporte para:
 
 - Salvamento automático
 - LocalStorage
-- Histórico de desfazer/refazer
+- Histórico (Desfazer / Refazer)
 - Backup automático
 - Múltiplos currículos
 - Importação JSON
@@ -152,11 +127,11 @@ Suporte para:
 - PDF em alta qualidade
 - Impressão otimizada
 - Links preservados
-- Pré-visualização antes da impressão
+- Visualização antes da impressão
 
 ---
 
-# 🛠 Tecnologias
+# 🚀 Tecnologias
 
 - HTML5
 - CSS3
@@ -172,7 +147,7 @@ Clone o projeto:
 
 ```bash
 git clone https://github.com/marcelogomesdev/curriculo-studio.git
-````
+```
 
 Entre na pasta:
 
@@ -196,26 +171,10 @@ Ou utilize a extensão **Live Server** do Visual Studio Code.
 curriculo-studio/
 │
 ├── css/
-│   ├── editor.css
-│   ├── curriculo.css
-│   ├── responsivo.css
-│   └── impressao.css
-│
 ├── images/
-│   ├── banner.png
-│   ├── logo.png
-│   └── favicon.png
-│
 ├── js/
-│   ├── app.js
-│   ├── estado.js
-│   ├── storage.js
-│   └── ...
-│
 ├── tests/
-│
 ├── index.html
-│
 └── README.md
 ```
 
@@ -231,55 +190,54 @@ node tests/core.test.mjs
 
 Os testes verificam:
 
-* Estado da aplicação
-* Persistência dos dados
-* Histórico
-* Backup
-* Migração
-* Múltiplos currículos
+- Estado da aplicação
+- Persistência
+- Histórico
+- Backup
+- Migração
+- Múltiplos currículos
 
 ---
 
-# 🗺 Roadmap
+# 🗺️ Roadmap
 
-## ✅ Concluído
+## ✅ Implementado
 
-* Editor visual em tempo real
-* Diversos modelos profissionais
-* Personalização completa
-* Exportação para PDF
-* Salvamento automático
-* Histórico (Desfazer/Refazer)
-* Backup
-* Importação e Exportação JSON
-* Interface responsiva
+- Editor visual em tempo real
+- Diversos modelos profissionais
+- Personalização completa
+- Exportação para PDF
+- Salvamento automático
+- Histórico
+- Backup
+- Importação e Exportação JSON
+- Interface responsiva
 
 ## 🚧 Próximas melhorias
 
-* Novos modelos
-* Temas adicionais
-* Biblioteca de ícones
-* Mais layouts profissionais
-* Melhorias de acessibilidade
-* Compartilhamento de currículos
+- Novos modelos
+- Biblioteca de ícones
+- Temas adicionais
+- Compartilhamento por link
+- Melhorias de acessibilidade
+- Mais opções de layout
 
 ---
 
 # 👨‍💻 Autor
 
-Desenvolvido por **Marcelo Gomes Dev**.
+**Marcelo Gomes Dev**
 
-* 🌐 Site: https://marcelogomesdev.github.io/curriculo-studio/
-* 💼 LinkedIn: https://www.linkedin.com/in/marcelogomesdev/
-* 💻 GitHub: https://github.com/marcelogomesdev
+🌐 Site: https://marcelogomesdev.github.io/curriculo-studio/
+
+💻 GitHub: https://github.com/marcelogomesdev
+
+💼 LinkedIn: https://www.linkedin.com/in/marcelogomesdev/
 
 ---
 
-# 📜 Licença
+# 📄 Licença
 
 Este projeto está licenciado sob a **Licença MIT**.
 
 Sinta-se à vontade para estudar, modificar e contribuir com o projeto.
-
-```
-```
