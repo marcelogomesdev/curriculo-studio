@@ -1,0 +1,10 @@
+@page { size: A4; margin: 0; }
+body { background: white !important; }
+.topbar, .editor, .preview-toolbar, .toast-region, .mobile-view-switch, .app-dialog, .pdf-preview-dialog, .site-footer { display: none !important; }
+.workspace, .preview-panel, .page-stage { display: block; min-height: 0; margin: 0; padding: 0; background: white; overflow: visible; }
+.resume-page { width: 210mm; min-height: 297mm; margin: 0; box-shadow: none; transform: none !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+.resume-section, .resume-item { break-inside: avoid; }
+.resume-section h2 { break-after: avoid; }
+.resume-header { break-inside: avoid; }
+.resume-placeholder { display: none !important; }
+.skill-level-list, .skill-list, .resume-list { break-inside: avoid; }

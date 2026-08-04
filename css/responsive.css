@@ -1,0 +1,41 @@
+@media (max-width: 1250px) and (min-width: 801px) {
+  .topbar { height: auto; min-height: 72px; padding-block: 10px; flex-wrap: wrap; }
+  .topbar__actions { width: 100%; justify-content: flex-end; flex-wrap: wrap; }
+}
+@media (max-width: 1100px) {
+  .workspace { grid-template-columns: 370px 1fr; }
+  .preview-panel { padding-inline: 20px; }
+  .resume-page { transform: scale(.68); }
+  .page-stage { min-height: 760px; }
+}
+@media (max-width: 800px) {
+  .mobile-view-switch { grid-column: 1 / -1; display: flex; gap: 8px; padding: 10px 16px 0; background: var(--ui-bg); }
+  .mobile-view-switch button { flex: 1; min-height: 40px; border: 1px solid var(--ui-border); border-radius: 8px; color: var(--ui-text); background: white; font-weight: 700; }
+  .mobile-view-switch button[aria-pressed="true"] { color: white; background: var(--ui-primary); border-color: var(--ui-primary); }
+  body.mobile-preview .editor { display: none; }
+  body.mobile-editor .preview-panel { display: none; }
+  .topbar { height: auto; min-height: 66px; padding: 12px 16px; flex-wrap: wrap; }
+  .brand small, .save-status { display: none; }
+  #resume-selector { max-width: 130px; }
+  .topbar__actions { margin-left: auto; }
+  .topbar__actions { flex-wrap: wrap; justify-content: flex-end; }
+  .button { padding-inline: 10px; font-size: 11px; }
+  .workspace { display: block; }
+  .editor { height: auto; max-height: none; padding: 22px 18px; border-right: 0; }
+  .preview-panel { padding: 22px 10px 30px; }
+  .page-stage { min-height: 650px; overflow: hidden; }
+  .resume-page { transform: scale(.56); }
+}
+@media (max-width: 600px) { .site-footer { align-items: flex-start; flex-direction: column; gap: 4px; padding: 14px 16px; } }
+@media (min-width: 801px) { .mobile-view-switch { display: none; } }
+@media (max-width: 520px) {
+  .topbar__actions { width: 100%; display: grid; grid-template-columns: 1fr 1fr; }
+  .topbar__actions .button { min-width: 0; }
+  #resume-selector { order: 3; width: 100%; max-width: none; }
+  .topbar__actions .button--primary { grid-column: 1 / -1; }
+  .field-row { grid-template-columns: 1fr; }
+  .item-editor__fields { grid-template-columns: 1fr; }
+  .preview-toolbar { padding-inline: 6px; }
+  .resume-page { transform: scale(.43); }
+  .page-stage { min-height: 500px; }
+}
