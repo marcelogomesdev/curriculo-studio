@@ -1,3 +1,4 @@
+````markdown
 <p align="center">
   <img src="images/banner.png" alt="Currículo Studio" width="100%">
 </p>
@@ -13,10 +14,20 @@
 </p>
 
 <p align="center">
+  <a href="https://marcelogomesdev.github.io/curriculo-studio/">
+    <strong>🌐 Acessar o Site</strong>
+  </a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://github.com/marcelogomesdev/curriculo-studio">
+    <strong>📂 Repositório</strong>
+  </a>
+</p>
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+<p align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 </p>
@@ -25,36 +36,36 @@
 
 # 📑 Índice
 
-* [Sobre o Projeto](#-sobre-o-projeto)
-* [Principais Recursos](#-principais-recursos)
-* [Tecnologias](#-tecnologias)
-* [Como Executar](#-como-executar)
-* [Estrutura do Projeto](#-estrutura-do-projeto)
-* [Testes](#-testes)
-* [Roadmap](#-roadmap)
-* [Autor](#-autor)
-* [Licença](#-licença)
+- [🚀 Sobre o Projeto](#-sobre-o-projeto)
+- [✨ Principais Recursos](#-principais-recursos)
+- [🛠 Tecnologias](#-tecnologias)
+- [▶️ Como Executar](#️-como-executar)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🧪 Testes](#-testes)
+- [🗺 Roadmap](#-roadmap)
+- [👨‍💻 Autor](#-autor)
+- [📜 Licença](#-licença)
 
 ---
 
 # 🚀 Sobre o Projeto
 
-O **Currículo Studio** é uma aplicação web desenvolvida para permitir que qualquer pessoa crie um currículo profissional de forma intuitiva, totalmente visual e sem depender de programas como Word ou Canva.
+O **Currículo Studio** é uma aplicação web desenvolvida para permitir que qualquer pessoa crie um currículo profissional de forma intuitiva, moderna e totalmente visual.
 
-Toda a edição acontece diretamente na folha A4, permitindo visualizar exatamente como o currículo será exportado em PDF.
+Diferente dos editores tradicionais, toda a edição acontece diretamente na folha A4, permitindo visualizar em tempo real exatamente como o currículo será exportado em PDF.
 
 O projeto foi desenvolvido utilizando apenas **HTML, CSS e JavaScript puro**, sem frameworks ou backend, priorizando desempenho, simplicidade e total controle da interface.
 
-### Principais diferenciais
+## 🎯 Diferenciais
 
-* ✅ Edição diretamente na prévia do currículo
-* ✅ Totalmente gratuito
-* ✅ Funciona offline
-* ✅ Sem cadastro
-* ✅ Sem backend
-* ✅ Dados armazenados localmente
-* ✅ Exportação para PDF
-* ✅ Interface moderna e responsiva
+- ✅ Editor visual semelhante ao Canva e Notion
+- ✅ Totalmente gratuito
+- ✅ Funciona offline
+- ✅ Não exige cadastro
+- ✅ Sem backend
+- ✅ Dados armazenados localmente
+- ✅ Exportação para PDF
+- ✅ Interface moderna e responsiva
 
 ---
 
@@ -62,39 +73,41 @@ O projeto foi desenvolvido utilizando apenas **HTML, CSS e JavaScript puro**, se
 
 ## 🎨 Editor Visual
 
-* Edição inline semelhante ao Canva e Notion
-* Prévia A4 em tempo real
-* Alterações instantâneas
-* Arrastar e soltar seções
-* Organização totalmente visual
+- Edição diretamente na folha A4
+- Clique no texto para editar
+- Atualização instantânea
+- Pré-visualização em tempo real
+- Organização por arrastar e soltar
 
 ---
 
-## 📄 Modelos Inclusos
+## 📄 Modelos Profissionais
 
-* Original
-* Analista
-* Barra Lateral
-* Executivo
-* Compacto
+O sistema possui diversos modelos independentes:
+
+- Original
+- Analista
+- Barra Lateral
+- Executivo
+- Compacto
 
 Cada modelo possui identidade visual própria.
 
 ---
 
-## 🎯 Personalização Completa
+## 🎨 Personalização Completa
 
-Personalize praticamente todos os elementos do currículo.
+Personalize praticamente todo o currículo:
 
-* Paletas de cores
-* Tipografia
-* Espaçamentos
-* Margens
-* Layout
-* Colunas
-* Contraste
-* Bordas
-* Aparência geral
+- Paletas de cores
+- Fontes
+- Espaçamentos
+- Margens
+- Colunas
+- Contraste
+- Bordas
+- Layout
+- Aparência geral
 
 ---
 
@@ -102,67 +115,69 @@ Personalize praticamente todos os elementos do currículo.
 
 Suporte para:
 
-* Experiências
-* Formação
-* Cursos
-* Certificações
-* Projetos
-* Idiomas
-* Habilidades
-* Interesses
-* Seções personalizadas
-* Fotos
-* Logos
-* Links
-* Tecnologias
-* Níveis por estrelas
-* Campos opcionais
+- Experiências
+- Formação Acadêmica
+- Cursos
+- Certificações
+- Projetos
+- Idiomas
+- Habilidades
+- Interesses
+- Referências
+- Prêmios
+- Voluntariado
+- Conquistas
+- Categorias personalizadas
+- Foto de perfil
+- Logotipos
+- Tecnologias
+- Links para LinkedIn, GitHub e WhatsApp
 
 ---
 
-## 💾 Persistência de Dados
+## 💾 Persistência
 
-* Salvamento automático
-* LocalStorage
-* Múltiplos currículos
-* Backup
-* Importação JSON
-* Exportação JSON
-* Histórico de desfazer/refazer
+- Salvamento automático
+- LocalStorage
+- Histórico de desfazer/refazer
+- Backup automático
+- Múltiplos currículos
+- Importação JSON
+- Exportação JSON
 
 ---
 
 ## 📄 Exportação
 
-* Impressão otimizada
-* PDF em alta qualidade
-* Links preservados
-* Pré-visualização antes da impressão
+- PDF em alta qualidade
+- Impressão otimizada
+- Links preservados
+- Pré-visualização antes da impressão
 
 ---
 
 # 🛠 Tecnologias
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-* LocalStorage
-* API nativa de impressão
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- LocalStorage
+- API nativa de impressão
 
 ---
 
 # ▶️ Como Executar
 
-Clone o repositório:
+Clone o projeto:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/Curriculo-Studio.git
-```
+git clone https://github.com/marcelogomesdev/curriculo-studio.git
+````
 
 Entre na pasta:
 
 ```bash
-cd Curriculo-Studio
+cd curriculo-studio
 ```
 
 Abra o arquivo:
@@ -171,14 +186,14 @@ Abra o arquivo:
 index.html
 ```
 
-Ou utilize a extensão **Live Server** do VS Code.
+Ou utilize a extensão **Live Server** do Visual Studio Code.
 
 ---
 
 # 📁 Estrutura do Projeto
 
 ```text
-Curriculo-Studio/
+curriculo-studio/
 │
 ├── css/
 │   ├── editor.css
@@ -217,7 +232,7 @@ node tests/core.test.mjs
 Os testes verificam:
 
 * Estado da aplicação
-* Persistência
+* Persistência dos dados
 * Histórico
 * Backup
 * Migração
@@ -227,42 +242,44 @@ Os testes verificam:
 
 # 🗺 Roadmap
 
-### ✅ Concluído
+## ✅ Concluído
 
-* Editor Visual
-* Modelos Profissionais
-* Exportação PDF
-* Salvamento Automático
-* Histórico
+* Editor visual em tempo real
+* Diversos modelos profissionais
+* Personalização completa
+* Exportação para PDF
+* Salvamento automático
+* Histórico (Desfazer/Refazer)
 * Backup
-* Importação/Exportação JSON
-* Interface Responsiva
+* Importação e Exportação JSON
+* Interface responsiva
 
-### 🚧 Em desenvolvimento
+## 🚧 Próximas melhorias
 
 * Novos modelos
-* Compartilhamento por link
 * Temas adicionais
 * Biblioteca de ícones
-* Mais opções de layout
+* Mais layouts profissionais
 * Melhorias de acessibilidade
+* Compartilhamento de currículos
 
 ---
 
 # 👨‍💻 Autor
 
-**Marcelo Gomes Dev**
+Desenvolvido por **Marcelo Gomes Dev**.
 
-GitHub
-
-https://github.com/marcelogomesdev
-
-LinkedIn
-
-https://www.linkedin.com/in/marcelogomesdev/
+* 🌐 Site: https://marcelogomesdev.github.io/curriculo-studio/
+* 💼 LinkedIn: https://www.linkedin.com/in/marcelogomesdev/
+* 💻 GitHub: https://github.com/marcelogomesdev
 
 ---
 
 # 📜 Licença
 
-Este projeto está licenciado sob a licença **MIT**.
+Este projeto está licenciado sob a **Licença MIT**.
+
+Sinta-se à vontade para estudar, modificar e contribuir com o projeto.
+
+```
+```
