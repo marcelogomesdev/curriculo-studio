@@ -76,6 +76,9 @@ input[aria-invalid="true"] { border-color: #d92d20 !important; }
 .item-editor__heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 2px; font-size: 12px; }
 .item-editor__fields { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10px; }
 .field--wide { grid-column: 1 / -1; }
+.paragraph-bullet-button { width: 100%; padding: 9px 11px; color: var(--ui-primary); background: #f7faff; border: 1px solid #b9d2f3; border-radius: 8px; text-align: left; font-size: 11px; font-weight: 700; }
+.paragraph-bullet-button:hover { background: #edf4ff; border-color: var(--ui-primary); }
+.paragraph-bullet-button.is-active { color: #175c35; background: #eaf8ef; border-color: #8dccaa; }
 .icon-button, .add-item-button { border: 0; background: transparent; font-size: 11px; font-weight: 700; }
 .icon-button--danger { color: #b42318; }
 .add-item-button { width: 100%; margin-top: 12px; padding: 9px; color: var(--ui-primary); background: #edf4ff; border-radius: 8px; }
@@ -102,6 +105,10 @@ input[aria-invalid="true"] { border-color: #d92d20 !important; }
 .field input, .field select { min-height: var(--ui-control-height); }
 .field input[type="checkbox"] { width: 16px; min-width: 16px; min-height: 16px; height: 16px; padding: 0; accent-color: var(--ui-primary); border-radius: 4px; }
 .field textarea { padding-block: 10px; }
+.date-picker__clear { width: 100%; padding: 7px 9px; color: #b42318; background: #fff7f6; border: 1px solid #f1c7c3; border-radius: 7px; font-size: 10px; font-weight: 700; }
+.course-preview-controls { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 2px; padding: 9px; background: #f8fafc; border: 1px solid #e2eaf3; border-radius: 8px; }
+.course-preview-controls strong { width: 100%; color: #344054; font-size: 11px; }
+.course-preview-controls button { padding: 5px 7px; color: #175c9f; background: white; border: 1px solid #bdd5ee; border-radius: 6px; font-size: 10px; font-weight: 700; }
 .theme-card small { display: block; margin-top: 10px; color: var(--ui-muted); line-height: 1.45; }
 .template-card { border-color: #cfe1f8; background: linear-gradient(145deg, #ffffff, #f4f9ff); }
 .template-card .button { width: 100%; margin-top: 4px; }

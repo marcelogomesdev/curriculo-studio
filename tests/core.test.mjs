@@ -18,7 +18,9 @@ assert.ok(demo.sections.some((section) => section.type === "header"));
 const legacy = { version: 1, metadata: { id: "legacy", name: "Legado" }, layout: {}, theme: {}, sections: [{ id: "experience", type: "experience", items: [{ id: "item", activities: "Uma\nDuas" }], customFields: [] }, { id: "skills", type: "skills", items: [{ id: "old", values: ["Figma", "HTML"] }], customFields: [] }] };
 const migrated = migrateResumeData(legacy);
 assert.equal(migrated.layout.columnRatio, "35-65");
-assert.deepEqual(migrated.sections[0].items[0].activities.map((item) => item.text), ["Uma", "Duas"]);
+assert.equal(migrated.sections[0].items[0].description, "Uma\nDuas");
+assert.equal(migrated.sections[0].items[0].descriptionBullets, true);
+assert.equal("activities" in migrated.sections[0].items[0], false);
 assert.deepEqual(migrated.sections[1].items.map((item) => item.title), ["Figma", "HTML"]);
 
 setState(createDemoState());

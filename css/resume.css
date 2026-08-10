@@ -69,10 +69,10 @@
 .resume-page[data-template="sidebar"] .contact-list { gap: 3px 9px; font-size: 7.5px; }
 .resume-page[data-template="sidebar"] .resume-avatar { width: 54px !important; height: 54px !important; font-size: 15px; }
 .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-section { margin-bottom: 13px; }
-.resume-page[data-template="sidebar"] .sidebar-template__panel .resume-section h2, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-item h3, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-description, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar"] .sidebar-template__panel .technology-list, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-custom-field { color: inherit; }
+.resume-page[data-template="sidebar"] .sidebar-template__panel .resume-section h2, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-item h3, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-description, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-custom-field { color: inherit; }
 .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-section h2 { margin-bottom: 6px; padding-bottom: 3px; border-color: rgba(255,255,255,.48); font-size: 9px; letter-spacing: .04em; }
 .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-item h3 { font-size: 9px; }
-.resume-page[data-template="sidebar"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-description, .resume-page[data-template="sidebar"] .sidebar-template__panel .technology-list { font-size: 7.5px; }
+.resume-page[data-template="sidebar"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar"] .sidebar-template__panel .resume-description { font-size: 7.5px; }
 .resume-page[data-template="sidebar"] .sidebar-template__panel .skill-tag { color: white; background: rgba(255,255,255,.12); font-size: 7.5px; }
 .resume-page[data-template="sidebar"] .sidebar-template__content .resume-section { margin-top: 12px; }
 .resume-page[data-template="sidebar"] .sidebar-template__content .resume-section h2 { margin-bottom: 5px; padding-bottom: 3px; color: #213d59; border-color: #9db4c8; font-size: 10px; letter-spacing: .02em; }
@@ -92,10 +92,10 @@
 .resume-page[data-template="sidebar-right"] .sidebar-template__content .resume-item { padding-bottom: 5px; border-bottom: 1px solid #e1e8ed; }
 .resume-page[data-template="sidebar-right"] .sidebar-template__content .resume-item:last-child { border-bottom: 0; }
 .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-section { margin-bottom: 11px; }
-.resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-section h2, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-item h3, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-description, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .technology-list, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-custom-field { color: inherit; }
+.resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-section h2, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-item h3, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-description, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-custom-field { color: inherit; }
 .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-section h2 { margin-bottom: 5px; padding-bottom: 3px; border-color: rgba(255,255,255,.46); font-size: 8.5px; letter-spacing: .04em; }
 .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-item h3 { font-size: 8.5px; }
-.resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-description, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .technology-list { font-size: 7px; }
+.resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-subtitle, .resume-page[data-template="sidebar-right"] .sidebar-template__panel .resume-description { font-size: 7px; }
 .resume-page[data-template="sidebar-right"] .sidebar-template__panel .skill-tag { padding: 3px 5px; color: white; background: rgba(255,255,255,.12); font-size: 7px; }
 .resume-page[data-template="analyst"] { padding: 14mm; }
 .resume-page[data-template="analyst"] .resume-header { padding-bottom: 9px; border-bottom: 0; }
@@ -119,7 +119,7 @@
 .resume-page[data-template="compact"] .resume-item { padding-bottom: 4px; border-bottom: 1px solid #e1e8ed; }
 .resume-page[data-template="compact"] .resume-item:last-child { border-bottom: 0; }
 .resume-page[data-template="compact"] .resume-item h3 { font-size: 8.5px; }
-.resume-page[data-template="compact"] .resume-subtitle, .resume-page[data-template="compact"] .resume-description, .resume-page[data-template="compact"] .technology-list { font-size: 7px; }
+.resume-page[data-template="compact"] .resume-subtitle, .resume-page[data-template="compact"] .resume-description { font-size: 7px; }
 .resume-page[data-template="compact"] .skill-tag { padding: 2px 4px; border-radius: 2px; font-size: 6.7px; }
 .resume-column { display: flex; flex-direction: column; gap: var(--resume-section-gap); }
 .resume-section { break-inside: avoid; }
@@ -135,15 +135,17 @@
 .resume-meta { padding: 0; border: 0; color: var(--resume-muted-color, #6b7789); background: transparent; font: inherit; font-size: calc(var(--resume-font-size) * .76); white-space: nowrap; cursor: pointer; }
 .resume-subtitle { margin-top: 2px !important; color: var(--resume-subtitle-color, var(--resume-accent-color)); font-size: calc(var(--resume-font-size) * .82); font-weight: 700; }
 .resume-description { margin-top: 5px !important; color: var(--resume-muted-color, #4a5768); font-size: calc(var(--resume-font-size) * .8); white-space: pre-line; }
-.technology-list { margin-top: 5px !important; color: var(--resume-muted-color, #4a5768); font-size: calc(var(--resume-font-size) * .76); }
-.language-stars { display: inline-block; margin-left: 7px; padding: 0; color: var(--resume-accent-color); background: transparent; border: 0; letter-spacing: 1px; white-space: nowrap; cursor: pointer; }
+.language-stars { display: inline-block; margin-left: 7px; font-size: calc(var(--resume-font-size) * 1.35); padding: 0; color: var(--resume-accent-color); background: transparent; border: 0; letter-spacing: 1px; white-space: nowrap; cursor: pointer; }
 .language-stars:hover, .language-stars:focus-visible { text-decoration: underline; }
+.skill-groups { display: grid; gap: 9px; }
+.skill-group__subtitle { margin: 0 0 4px !important; color: var(--resume-subtitle-color, var(--resume-accent-color)); font-size: calc(var(--resume-font-size) * .82); font-weight: 700; }
 .skill-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .skill-tag { padding: 4px 7px; color: var(--resume-title-color); background: var(--resume-accent-soft, color-mix(in srgb, var(--resume-accent-color) 10%, white)); border-radius: 4px; font-size: 9.5px; font-weight: 700; }
 .empty-section { color: #98a2b3; font-size: 10px; font-style: italic; }
 .resume-custom-field { margin-top: 5px !important; color: #4a5768; font-size: 10.5px; }
 .resume-custom-title { margin: 10px 0 4px; color: var(--resume-title-color); font-size: 11px; }
 .resume-list { margin: 0; padding-left: 16px; }
+.resume-description-list { margin-top: 5px; color: var(--resume-muted-color, #4a5768); font-size: calc(var(--resume-font-size) * .8); }
 .skill-level-list { display: grid; gap: 6px; }
 .skill-level { display: flex; justify-content: space-between; gap: 12px; font-size: 10.5px; }
 .resume-section--compact { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 14px; row-gap: var(--resume-item-gap); }
