@@ -33,17 +33,9 @@ function renderEditorKeepingSections() {
     sectionOpenStateInitialized = true;
   }
 }
-function renderAll() { renderEditorKeepingSections(); renderPreview(getState()); updateProgress(); updateZoom(); updateResumeSelector(); }
+function renderAll() { renderEditorKeepingSections(); renderPreview(getState()); updateZoom(); updateResumeSelector(); }
 function updateResumeSelector() { const selector = document.querySelector("#resume-selector"); if (!selector) return; selector.innerHTML = listResumes().map((resume) => `<option value="${resume.id}">${resume.name}</option>`).join(""); selector.value = getState().metadata.id; }
-function updateProgress() {
-  const state = getState();
-  const header = state.sections.find((s) => s.type === "header")?.items[0] || {};
-  const filled = [header.name, header.role, header.email, header.phone, header.city].filter(Boolean).length;
-  const contentSections = state.sections.filter((s) => s.type !== "header" && s.items.length).length;
-  const progress = Math.min(100, Math.round(((filled + contentSections) / 10) * 100));
-  document.querySelector("#progress-label").textContent = `${progress}%`;
-  document.querySelector("#progress-bar").style.width = `${progress}%`;
-}
+
 function updateZoom() {
   document.querySelector("#resume-preview").style.transform = `scale(${zoom / 100})`;
   document.querySelector("#zoom-value").value = `${zoom}%`;
@@ -181,6 +173,7 @@ document.addEventListener("click", async (event) => {
   if (action === "inline-toggle-section") { const sectionId = event.target.dataset.sectionId; updateState((state) => { const section = state.sections.find((entry) => entry.id === sectionId); if (section) section.visible = !section.visible; }); renderAll(); autoSave(); toast("Visibilidade da seção atualizada."); return; }
   if (action === "inline-delete-section") { const sectionId = event.target.dataset.sectionId; if (!await askDialog({ title: "Excluir seção", message: "A seção e seus itens serão removidos.", confirmLabel: "Excluir", danger: true })) return; updateState((state) => { state.sections = state.sections.filter((section) => section.id !== sectionId || section.type === "header"); normalizeOrder(state); }); renderAll(); autoSave(); toast("Seção excluída."); return; }
   if (action === "inline-add-section") { const sourceId = event.target.dataset.sectionId; const type = await askDialog({ title: "Adicionar seção", message: "Digite: experiência, formação, curso, projeto, certificação, idioma, habilidade ou personalizada.", value: "experiência", label: "Tipo da seção", confirmLabel: "Adicionar", input: true }); if (!type) return; const types = { "experiência": ["experience", "Experiência profissional"], "formação": ["education", "Formação"], "curso": ["courses", "Cursos"], "projeto": ["projects", "Projetos"], "certificação": ["certifications", "Certificações"], "idioma": ["languages", "Idiomas"], "habilidade": ["skills", "Habilidades"], "personalizada": ["custom", "Nova categoria"] }; const selected = types[type.toLowerCase()]; if (!selected) { toast("Tipo de seção não reconhecido."); return; } updateState((state) => { const index = state.sections.findIndex((section) => section.id === sourceId); state.sections.splice(index + 1, 0, { id: createId("section"), type: selected[0], title: selected[1], visible: true, column: state.sections[index]?.column || 1, order: 0, settings: {}, items: [], customFields: [] }); normalizeOrder(state); }); renderAll(); autoSave(); toast("Seção adicionada."); return; }
+  if (action === "toggle-mobile-topbar") { const topbar = event.target.closest(".topbar"); const expanded = !topbar?.classList.contains("is-expanded"); topbar?.classList.toggle("is-expanded", expanded); const button = event.target.closest("[data-action]"); button?.setAttribute("aria-expanded", String(expanded)); return; }
   if (action === "show-editor" || action === "show-preview") { const preview = action === "show-preview"; document.body.classList.toggle("mobile-preview", preview); document.body.classList.toggle("mobile-editor", !preview); document.querySelectorAll(".mobile-view-switch button").forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.action === action))); return; }
   if (action === "toggle-section") {
     const card = event.target.closest(".section-card"); card.classList.toggle("is-open"); event.target.closest("button").setAttribute("aria-expanded", card.classList.contains("is-open"));

@@ -18,8 +18,10 @@
       <span class="brand__mark" aria-hidden="true">CS</span>
       <span><strong>Currículo Studio</strong><small>Seu currículo, do seu jeito</small></span>
     </a>
-    <select id="resume-selector" aria-label="Currículo ativo"></select>
-    <nav class="topbar__actions" aria-label="Ações do projeto">
+    <button class="topbar__toggle" type="button" data-action="toggle-mobile-topbar" aria-expanded="false" aria-controls="topbar-mobile-controls">Configurações e edição <span aria-hidden="true">⌄</span></button>
+    <div class="topbar__collapsible" id="topbar-mobile-controls">
+      <select id="resume-selector" aria-label="Currículo ativo"></select>
+      <nav class="topbar__actions" aria-label="Ações do projeto">
       <button class="button button--ghost" type="button" data-action="save">Salvar</button>
       <button class="button button--ghost" type="button" data-action="new-resume">Novo</button>
       <button class="button button--ghost" type="button" data-action="rename-resume">Renomear</button>
@@ -34,6 +36,7 @@
       <button class="button button--ghost" type="button" data-action="preview-pdf">Visualizar PDF</button>
       <button class="button button--primary" type="button" data-action="print">Baixar PDF</button>
     </nav>
+    </div>
   </header>
 
   <main class="workspace">
@@ -43,11 +46,6 @@
         <span class="eyebrow">EDITOR VISUAL</span>
         <h1>Monte um currículo que parece com você.</h1>
         <p>Organize o conteúdo em blocos e acompanhe o resultado em tempo real.</p>
-      </div>
-      <div class="progress-card" aria-label="Progresso do currículo">
-        <div><span>Seu progresso</span><strong id="progress-label">40%</strong></div>
-        <div class="progress-track"><span id="progress-bar"></span></div>
-        <small>Complete seus dados para fortalecer o currículo.</small>
       </div>
       <div class="editor-tabs" role="tablist" aria-label="Áreas do editor">
         <button class="editor-tab is-active" type="button" role="tab" aria-selected="true" data-tab="content">Conteúdo</button>
