@@ -53,6 +53,10 @@ Desenvolvido utilizando apenas **HTML, CSS e JavaScript**, o projeto funciona to
 - Interface intuitiva
 - Organização por arrastar e soltar
 
+### Edição de conteúdo em tempo real
+
+![Editor visual do Currículo Studio](./images/editor-geral.PNG)
+
 ---
 
 ## 📄 Modelos de Currículo
@@ -82,6 +86,10 @@ Personalize praticamente todo o currículo:
 - Bordas
 - Layout
 - Aparência geral
+
+### Personalização de aparência
+
+![Painel de aparência do Currículo Studio](./images/aparencia.PNG)
 
 ---
 
