@@ -15,7 +15,7 @@ export function createDemoState() {
       textColor: "#253044", titleColor: "#183b68", accentColor: "#2f6db1",
       subtitleColor: "#2f6db1", mutedColor: "#6b7789", linkColor: "#2f6db1", dividerColor: "#cfdae7",
       backgroundColor: "#ffffff", pagePadding: 18, sectionGap: 18, itemGap: 12,
-      borderRadius: 0, showDividers: true, titleSize: 12, titleWeight: 700, titleTransform: "uppercase"
+      borderRadius: 0, showDividers: true, dividerWidth: 1, titleSize: 12, titleWeight: 700, titleTransform: "uppercase"
     },
     sections: [
       section("header", "Cabeçalho", 1, 0, [{ id: createId("item"), name: "Marina Costa", role: "Product Designer", email: "marina.costa@exemplo.com", phone: "+55 11 99999-0000", city: "São Paulo, SP", linkedin: "linkedin.com/in/marinacosta" }]),
